@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/tvimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="News Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image1"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:text="Title"
+        android:layout_height="wrap_content"
+
+
+        />
+    <TextView
+        android:padding="2dp"
+        android:id="@+id/tvdescription"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:text="Caught On Camera: Ryanair CEO Michael O'Leary Hit With Cream Pies By Climate Protesters"
+        android:layout_height="wrap_content"
+
+
+        />
+
+    </LinearLayout>
+</LinearLayout>
